@@ -17,8 +17,6 @@ hour = (hour >= 12) ? hour - 12 : hour;
 if(hour === 0 && prepand === 'PM'){
     hour = 12;
     prepand = 'Medio día';
-}else{
-    prepand = 'PM'
 }
 
 if(hour === 0 && prepand == 'AM'){

@@ -1,7 +1,6 @@
 //Ejercicio 3
 // Crear un script que permita encontrar el área de un triángulo dado el largo de sus tres lados
 // a= 5, b= 6, c= 7
-
 var form = document.getElementById('form');
 form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -11,9 +10,7 @@ form.addEventListener('submit', (event) => {
     var c = parseInt(data.get('number3'));
     calcular(a, b, c);
 })
-
 var result = document.getElementById('response');
-
 calcular(5, 6, 7);
 function calcular(number1, number2, number3) {
     var perimetro = number1 + number2 + number3;
