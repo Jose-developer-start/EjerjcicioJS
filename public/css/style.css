@@ -6,6 +6,13 @@ html {
 }
 body {
   font-size: 16px; /*1rem = 10px*/
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(39, 69, 96, 1) 46%,
+    rgba(0, 247, 255, 1) 100%
+  );
 }
 h1,
 h2,
@@ -54,19 +61,17 @@ nav a:hover {
 }
 /*End Nav*/
 main {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(39, 69, 96, 1) 46%,
-    rgba(0, 247, 255, 1) 100%
-  );
+  
+}
+main h2{
+  color: rgb(154, 255, 129);
+  padding-bottom: 2rem
 }
 .botones {
   display: flex;
@@ -112,6 +117,9 @@ main {
   background: linear-gradient(180deg, #42a5f5, #2196f3);
 }
 /*Estilos de ejer2*/
+article{
+  background-color: #fff;
+}
 @media (min-width: 760px) {
   article {
     padding: 4rem 15rem !important;
@@ -131,13 +139,24 @@ form input{
   margin: 0.4rem 0;
   position: relative;
   font-size: 1.8rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline:none;
 }
 input[type='submit']{
   padding: 1rem;
   width: 100%;
   font-size: 1.8rem;
+  border-radius: 0.5rem;
+  border: none;
 }
 input[type='submit']:hover{
   background: linear-gradient(180deg, #42a5f5, #2196f3);
   cursor: pointer;
+}
+
+/*Estilos de footer*/
+footer p{
+  text-align: center;
+  color: #b6b6b6;
 }

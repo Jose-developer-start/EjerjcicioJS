@@ -28,5 +28,5 @@ if(hour === 0 && prepand == 'AM'){
         prepand = 'AM';
     }
 }
-dia.innerHTML = "Hoy es: " + daylist[day]+'.';
-hora.innerHTML = 'Hora actual: ' +hour+' '+prepand+': '+minute+': '+second;
+dia.innerHTML = '<i class="fas fa-calendar-day"></i> Hoy es: ' + daylist[day]+'.';
+hora.innerHTML = '<i class="far fa-clock"></i> Hora actual: ' +hour+' '+prepand+': '+minute+': '+second;
